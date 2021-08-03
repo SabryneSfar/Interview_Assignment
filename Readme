@@ -1,0 +1,26 @@
+Tools Used;
+
+NPM project:
+
+HTTP request Library: Axios
+Assertion Library: Chai
+Testin Framework: Mocha
+
+To run tests two ways:
+'npm test' or ‘mocha --timeout 10000’ 
+
+
+Differences between GET and POST
+
+GET: is an HTTP method used to retrieve existing data in the API in a specified format(Json or XML)- 
+POST: is an HTTP method that is used to add data to the API.
+It usually requires a body or Payload to be added to the request in the specific schema used 
+and it allows us to save the new data added 
+and should be able to immediately retrieve it/confirm it with the use of GET method.(if added correctly)
+
+
+Side Note: 
+
+If test fails it is because the usMarketOpen hours of operations change;
+So when it is closed, we should change the related statements .tofalse 
+And that should fix the problem
